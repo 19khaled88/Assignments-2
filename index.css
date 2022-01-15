@@ -1,0 +1,346 @@
+/* common css codes */
+body{
+ margin:0px;
+ padding:0px;  
+ font-family: 'Poppins', sans-serif;
+ background-color: whitesmoke;
+}
+
+
+/* navigatoin css code starts here*/
+header{
+    height: 80px;
+    background-color: cornflowerblue;
+}
+nav{
+   padding-top: 10px;
+}
+nav ul{
+   display: flex;
+   justify-content: space-between;
+   margin-right:40px; 
+}
+nav li{
+   list-style: none;
+   margin-right: 25px;  
+}
+nav li:last-child{
+    margin-right:0px;
+}
+#nav-child-2{
+    display: flex;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* influencer journey section */
+
+#start-influencing{
+    display: flex;
+    margin: 20px 40px;
+}
+#start-influencing img{
+    border-radius: 50%;
+    border:3px solid rgba(194, 189, 189, 0.152);
+    
+    padding: 5px 5px 5px 5px;
+}
+#start-influencing button{
+    height: 35px;width: 150px;
+    background-color: #F05454;
+    border: 0px solid;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+}
+#start-influencing button i{
+    padding-left:5px; 
+    color: white;
+}
+#start-influencing p{
+    margin-left:0px;
+    padding-left:0px;
+}
+.start-influencing-text{
+    padding-right:100px;
+    padding-top:60px
+}
+.start-influencing-text h1{
+    font-size: 40px;
+}
+/* giant company logo desing start here */
+#giant-company-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:40px;
+    margin-bottom: 40px;
+   
+
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(to left, rgb(230, 229, 229) 1%, rgb(181, 182, 182) 50%, rgb(230, 229, 229) 100%) 
+                  100% 0 100% 0/3px 0 3px 0 stretch;
+    
+    /* other demo stuff */
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* popular section start here */
+#popular-collection-title{
+    text-align: center;
+}
+#popular-collection{
+    margin-left:15%;
+    margin-right:15%;
+}
+#popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+#popular-collection-inner{
+    border-radius:5px;
+    background-color: white;
+    margin: 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#popular-collection img{
+    padding: 8px 8px;
+    width:280px;
+}
+#popular-collection h3, h2, span, p{
+    padding-left:8px;
+    
+}
+#popular-collection span, p{
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+#popular-collection h2, h3{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.fa-star{
+    color: yellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+}
+.yellow-color {
+    color:yellow;
+    }
+
+#see-more{
+    float: right;
+    padding-right: 200px;
+    color: #F05454;
+    font-weight: bold;
+    margin-top:20px;
+}
+#see-more .fa-arrow-right{
+    color:#F05454 ;
+    padding-left:5px;
+}
+
+/* Feature product detail starts here */
+#feature-product{
+    margin-top:100px;
+    display: flex;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.featur-product-image{
+    padding-right: 50px;
+}
+
+#feature-product button{
+    margin-left: 8px;
+    height: 35px;width: 150px;
+    background-color: #F05454;
+    border: 0px solid;
+    color: white;
+    font-size: 15px;
+}
+#feature-product h2{
+    font-size: 30px;
+}
+#feature-product button .fa-arrow-right{
+    padding-left:5px ;
+    color: white;
+}
+
+/* footer css start here*/
+#footer-section{
+    height: 200px;
+    background-color: slategray;
+}
+
+.footer-text{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+}
+.footer-icons img{
+    width: 30px;
+    height: 30px;
+    padding-left:2px;
+    padding-right: 2px;
+}
+.footer-icons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-icons{
+    padding-top: 10px; 
+}
+
+
+/* media query */
+
+/* mobile devices */
+
+@media only screen and (max-width: 680px){
+
+    /*nav bar*/
+    nav ul{
+        display: block;
+    }
+    nav ul #nav-child-2{
+        display: block;
+        padding-left: 0px;
+    }
+    header{
+        height: 100%;
+    }
+    /* influencing  */
+    #start-influencing{
+        display: block;
+        flex-direction: row;
+    }
+    .start-influencing-text{
+        width: 100%;
+    }
+    .start-influencing-img img{
+        width: 100%;
+    }
+
+    /* giant company logo*/
+    #giant-company-logo{
+        display: block;
+        height: 100%;
+    }
+
+    /* popular collectoin*/
+    #popular-collection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    #popular-collection div{
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    
+    }
+
+    #popular-collection-inner{
+        display: flex;
+    }
+    #popular-collection-inner img{
+        width: 50%;
+    }
+    #popular-collection-inner div{
+        width: 50%;
+    }
+
+    /* feature product*/
+
+    #feature-product{
+        display: block;
+    }
+
+    .featur-product-image{
+        width: 100%;
+    }
+    .feature-product-text{
+        width: 100%;
+    }
+
+    /* footer section */
+    #footer-section{
+        margin-top: 4px;
+    }
+}
+
+@media only screen and (max-width:990px ) and (min-width: 681px){
+
+     /* influencing  */
+    .start-influencing-text{
+        width: 100%;
+    }
+    .start-influencing-img img{
+        width: 100%;
+       
+    }
+
+     /* giant company logo*/
+     #giant-company-logo{
+        width: 80%;
+        height: 100%;
+    }
+
+    /* popular collectoin*/
+    #popular-collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    #popular-collection div{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+     
+     }
+
+     /* footer section */
+    #footer-section{
+        margin-top: 4px;
+    }
+    
+}
+
+@media only screen and (min-width:991px ) {
+    /* popular collectoin*/
+    #popular-collection{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    #popular-collection div{
+        justify-content: center;
+        align-items: center;
+       
+     
+     }
+
+
+      /* footer section */
+    #footer-section{
+        margin-top: 4px;
+    }
+
+}
